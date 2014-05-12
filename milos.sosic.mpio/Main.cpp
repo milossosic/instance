@@ -39,17 +39,25 @@ const int M = 1000;
 //int SC_capacity = 100;
 //int BS_capacity = 40;
 
-string name = "extraLarge";
+//string name = "extraLarge";
+//int SC_old_num = 2;
+//int SC_new_num = 6;
+//int BS_old_num = 8;
+//int BS_new_num = 18;
+//int point_num = 200;
+//
+//int SC_capacity = 100;
+//int BS_capacity = 40;
+
+string name = "extraExtraLarge";
 int SC_old_num = 2;
 int SC_new_num = 6;
 int BS_old_num = 8;
 int BS_new_num = 18;
-int point_num = 200;
+int point_num = 230;
 
 int SC_capacity = 100;
 int BS_capacity = 40;
-
-
 int SC_num;
 int BS_num;
 
@@ -132,7 +140,7 @@ int main()
 
 		//cout << "in" << no << endl;
 
-		point demand_points[300];
+		point demand_points[400];
 		switching_center switching_centers[20];
 		base_station base_stations[50];
 
@@ -147,7 +155,7 @@ int main()
 		int sc_new_add = 0.5 * (dist(generator) % SC_new_num);
 		int bs_old_add = 0.5 * (dist(generator) % BS_old_num);;
 		int bs_new_add = 0.5 * (dist(generator) % BS_new_num);
-		int point_add  = 0.2 * (dist(generator) % point_num);
+		int point_add  = 0.5 * (dist(generator) % point_num);
 
 		SC_old_num += sc_old_add;
 		SC_new_num += sc_new_add;
